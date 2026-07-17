@@ -15,6 +15,43 @@ Smart Expense Tracker is a full-stack web application built to simplify personal
 - Clean and intuitive user interface
 
 ---
+## Application Preview
+
+### Dashboard
+
+![Dashboard](docs/screenshots/dashboard.png)
+
+---
+
+### Add Expense
+
+![Add Expense](docs/screenshots/add-expense.png)
+
+---
+
+### Search & Filter
+
+![Search & Filter](docs/screenshots/search-filter.png)
+
+---
+
+### Receipt Upload
+
+![Receipt Upload](docs/screenshots/receipt-upload.png)
+
+---
+
+### Edit Expense
+
+![Edit Expense](docs/screenshots/edit-expense.png)
+
+---
+
+### Delete Expense
+
+![Delete Expense](docs/screenshots/delete-expense.png)
+
+---
 
 ## Tech Stack
 
