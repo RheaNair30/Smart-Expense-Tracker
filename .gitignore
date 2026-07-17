@@ -1,0 +1,15 @@
+# Dependencies
+server/node_modules/
+
+# Environment variables
+server/.env
+
+# Uploaded receipts
+server/uploads/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,507 @@
+/* ---------- Google Font ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ---------- Reset ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#f8f9fc,#eef3ff);
+    color:#222;
+
+}
+
+
+/* ---------- Header ---------- */
+
+.header{
+
+    background:white;
+    padding:20px 50px;
+    margin-bottom:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+
+}
+
+.header h1{
+
+    font-size:30px;
+    font-weight:600;
+
+}
+
+.header i{
+
+    color:#2563eb;
+    margin-right:10px;
+
+}
+.header p{
+
+    color:#6b7280;
+
+    font-size:14px;
+
+    opacity:0.85;
+
+    margin-top:5px;
+
+}
+
+
+/* ---------- Dashboard ---------- */
+
+.dashboard{
+
+    width:90%;
+    margin:40px auto;
+
+}
+
+
+/* ---------- Summary Cards ---------- */
+
+.summary-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+.card{
+
+    background:white;
+
+    border-radius:18px;
+
+    border-top:4px solid #2563eb;
+
+    padding:20px 25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+
+    transition:all .25s ease;
+
+}
+.card:nth-child(1){
+    border-top-color:#2563eb;
+}
+
+.card:nth-child(2){
+    border-top-color:#16a34a;
+}
+
+.card:nth-child(3){
+    border-top-color:#f59e0b;
+}
+
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+.card h3{
+
+    color:#666;
+    font-size:15px;
+    font-weight: 500;
+    margin-bottom:8px;
+
+}
+
+
+.card h2{
+
+    font-size:42px;
+    font-weight:700;
+    color:#2563eb;
+
+}
+/* ---------- Chart ---------- */
+
+.chart-section{
+
+    margin-top:35px;
+
+}
+
+.chart-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:18px 20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+.chart-card h2{
+
+    margin-bottom:25px;
+
+    font-size:22px;
+
+}
+
+#expenseChart{
+
+    max-height:250px;
+
+}
+/* ---------- Search & Filter ---------- */
+
+.controls{
+
+    margin-top:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+}
+
+.controls input{
+
+    flex:1;
+
+    padding:14px 18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+
+}
+
+.controls input:focus{
+
+    outline:none;
+
+}
+
+.controls select{
+
+    width:220px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    background:white;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+
+    cursor:pointer;
+
+}
+
+
+
+/* ---------- Table ---------- */
+
+.table-section{
+
+    margin-top:30px;
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+thead{
+
+    background:#1d4ed8;
+
+    color:white;
+
+}
+
+th{
+
+    padding:18px;
+
+    text-align:left;
+
+    font-weight:600;
+
+}
+
+td{
+
+    padding:18px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+tbody tr{
+
+    transition: background 0.2s ease;
+
+}
+
+tbody tr:hover{
+
+    background:#f8fbff;
+
+}
+/* ---------- Floating Button ---------- */
+
+.floating-btn{
+
+    position:fixed;
+
+    right:40px;
+
+    bottom:40px;
+
+    width:65px;
+
+    height:65px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+
+    transition:0.3s;
+
+}
+
+.floating-btn:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+
+/* ---------- Modal ---------- */
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,0.45);
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.modal-content{
+
+    width:450px;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    position:relative;
+
+    animation:popup 0.25s ease;
+
+}
+
+.modal-content h2{
+
+    margin-bottom:20px;
+
+}
+
+.close-btn{
+
+    position:absolute;
+
+    right:20px;
+
+    top:15px;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+}
+
+#expenseForm{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+#expenseForm input,
+#expenseForm select,
+#expenseForm textarea{
+
+    padding:12px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    font-family:inherit;
+
+}
+
+.save-btn{
+
+    border:none;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:0.3s;
+
+}
+
+.save-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+
+@keyframes popup{
+
+    from{
+
+        transform:scale(0.9);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+/* ---------- Action Buttons ---------- */
+
+.edit-btn,
+.delete-btn{
+
+    width:34px;
+    height:34px;
+
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    border:none;
+    border-radius:10px;
+
+    cursor:pointer;
+
+    color:white;
+
+    margin-right:10px;
+
+    transition:0.3s;
+
+}
+
+.edit-btn{
+
+    background:#2563eb;
+
+}
+
+.delete-btn{
+
+    background:#dc2626;
+
+}
+
+.edit-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.delete-btn:hover{
+
+    background:#b91c1c;
+
+}
